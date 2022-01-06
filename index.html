@@ -6,32 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div class="header-left"><img src="images/logo1.jfif" alt="" /></div>
       <h1>Shwe Property</h1>
       <div class="header-right">
         <div class="btn"><a href="">Login</a></div>
         <div class="btn"><a href="">Register</a></div>
       </div>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+      >
+        <i onclick="myicon(this)" class="fa fa-bars"></i
+      ></a>
     </header>
-    <nav>
-        <ul>
-            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i> ဝယ်ရန်</a></li>
-            <li><a href="">ငှားရန်</a></li>
-            <li><a href="" class="line">စီမံကိန်း အသစ်များ</a></li>
-            <li><a href="">အိမ်ခြံမြေပြပွဲများ</a></li>
-            <li><a href="">အိမ်ခြံမြေလမ်းညွှန်</a></li>
-            <li><a href="">အိမ်ခြံမြေလမ်းညွှန်</a></li>
-            <li><a href="">အကျိုးဆောင်များ</a></li>
-            <li><a href="">အကျိုးဆောင်</a></li>
-            <li><a href=""><i class="fa fa-address-book" aria-hidden="true"></i>အသစ်များ</a></li>
-            <li><a href=""><i class="fa fa-search" aria-hidden="true"></i>ID ဖြင့်ရှာပါ</a></li>
-            <li><a href=""><i class="fa fa-phone-square" aria-hidden="true"></i>ဆက်သွယ်ရန်</a></li>
-        </ul>
+    <nav id="nav" class="nav">
+      <ul>
+        <li>
+          <a href=""><i class="fa fa-home" aria-hidden="true"></i> ဝယ်ရန်</a>
+        </li>
+        <li><a href="">ငှားရန်</a></li>
+        <li><a href="" class="line">စီမံကိန်း အသစ်များ</a></li>
+        <li><a href="">အိမ်ခြံမြေပြပွဲများ</a></li>
+        <li><a href="">အိမ်ခြံမြေလမ်းညွှန်</a></li>
+        <li><a href="">အိမ်ခြံမြေလမ်းညွှန်</a></li>
+        <li><a href="">အကျိုးဆောင်များ</a></li>
+        <li><a href="">အကျိုးဆောင်</a></li>
+        <li>
+          <a href=""
+            ><i class="fa fa-address-book" aria-hidden="true"></i>အသစ်များ</a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="fa fa-search" aria-hidden="true"></i>ID ဖြင့်ရှာပါ</a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="fa fa-phone-square" aria-hidden="true"></i>ဆက်သွယ်ရန်</a
+          >
+        </li>
+      </ul>
     </nav>
     <div class="banner">
       <img src="images/img1.jpg" alt="" />
@@ -158,5 +184,20 @@
         <a href="#">See More...</a>
       </div>
     </section>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("nav");
+        if (x.className === "nav") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav";
+        }
+      }
+
+      function myicon(x) {
+        x.classList.toggle("fa-window-close");
+      }
+    </script>
   </body>
 </html>

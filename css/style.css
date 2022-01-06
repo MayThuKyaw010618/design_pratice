@@ -15,7 +15,6 @@ header {
   position: sticky;
   top: 0;
   background: #ecfdf5;
-
 }
 
 header h1 {
@@ -48,16 +47,17 @@ header h1 {
   align-items: center;
   text-decoration: none;
   padding: 7px 20px 0px 20px;
-  color: #000000;
+  color: #ecfdf5;
   margin-left: 20px;
 }
 
 .header-right .btn a:hover {
   background-color: #ecfdf5;
+  color: #099573;
 }
 
 nav {
-    background: #ecfdf5;
+  background: #ecfdf5;
 }
 
 ul {
@@ -70,30 +70,32 @@ ul {
 }
 
 ul li .line {
-    border-right: 2px solid #099573;
+  border-right: 2px solid #099573;
 }
 
 ul li {
-    flex: 3;
+  flex: 3;
 }
 
 ul li a {
-    text-decoration: none;
-    text-align: center;
-    padding: 10px 6px; 
-    display: inline-block; 
-    color: #ecfdf5;
-    background: #099573;
-    width: 100%; 
-    box-sizing: border-box; 
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 6px;
+  display: inline-block;
+  color: #ecfdf5;
+  background: #099573;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 ul li a:hover {
-    background: #ecfdf5;
-    color: #099573;
+  background: #ecfdf5;
+  color: #099573;
 }
 
-
+.icon {
+  display: none;
+}
 
 .banner img {
   object-fit: contain;
@@ -161,7 +163,7 @@ ul li a:hover {
 }
 
 .section2 .btn a {
-  background: #ecfdf5;
+  background: #099573;
   text-align: center;
   border: 1px solid #00c292;
   display: block;
@@ -170,11 +172,12 @@ ul li a:hover {
   align-items: center;
   text-decoration: none;
   padding: 5px 15px;
-  color: #000000;
+  color: #ecfdf5;
 }
 
 .section2 .btn a:hover {
-  background-color: #00c292;
+  background-color: #ecfdf5;
+  color: #099573;
 }
 
 .section3 {
@@ -217,18 +220,19 @@ ul li a:hover {
 .section3 .btn a {
   background: #00c292;
   text-align: center;
-  border: 1px solid #00c292;
+  border: 1px solid #099573;
   display: block;
   height: 30px;
   align-items: center;
   text-decoration: none;
   padding: 7px 20px 0px 20px;
-  color: #000000;
+  color: #ecfdf5;
   margin: 0 auto;
 }
 
 .section3 .btn a:hover {
   background-color: #ecfdf5;
+  color: #099573;
 }
 
 @media screen and (max-width: 1024px) {
@@ -264,7 +268,57 @@ ul li a:hover {
     width: 90%;
   }
 
+  header .header-right {
+    margin-right: 80px;
+  }
+
   .btn a {
     width: 50%;
+  }
+
+  .nav.responsive,
+  .nav {
+    position: relative;
+  }
+
+  .nav.responsive li a {
+    display: block;
+    text-align: left;
+    padding: 20px 0px;
+    width: 100%;
+    font-size: 12px;
+    font-family: "Montserrat";
+    line-height: 1.733;
+    color: white;
+    border-bottom: 1px solid #ecfdf5;
+    padding-left: 10px;
+  }
+
+  .nav ul li a {
+    display: none;
+  }
+
+  ul {
+    display: block;
+  }
+
+  .icon {
+    display: block;
+    float: right;
+    color: #099573;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    padding: 33px 20px;
+  }
+
+  .icon i {
+    font-size: 30px;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
   }
 }
