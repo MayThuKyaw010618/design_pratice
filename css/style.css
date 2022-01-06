@@ -1,9 +1,3 @@
-.container {
-  width: 100%;
-  margin: 0;
-  min-width: 1024px;
-  font-family: "Pyidaungsu", "Arial", sans-serif;
-}
 
 .container-inner {
   max-width: 1024px;
@@ -147,13 +141,7 @@
   background-color: #ecfdf5;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-    margin: 0;
-    min-width: 768px;
-  }
-
+@media screen and (max-width: 1024px) {
   .container-inner {
     max-width: 600px;
     margin: 0 auto;
@@ -181,5 +169,10 @@
 
   .section3 .figure {
     width: 90%;
+  }
+
+
+  .btn a {
+      width: 50%;
   }
 }
